@@ -5,8 +5,18 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1> {{title}} </h1>
-    <p>Welcome to  {{title}} </p>
+   <h1>Bitcoin info</h1>
+  {{!-- <p id="pokeInfo"></p> --}}
+  <button id="bitcoinButton">Get Bitcoin of last month!</button>
+  <canvas id="myChart"></canvas>
+
+<p>Start-Date</p><input id="startDate" type="date">
+<p>End-Date</p><input id="endDate" type="date">
+<button id="bpiBtn" type="button">Show graph</button>
+
+
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="/javascripts/financial-data.js" charset="utf-8"></script>
 </html>
